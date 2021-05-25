@@ -1,0 +1,35 @@
+/* #input_country{
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background: #fff;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    padding-left: 10px;
+    border-radius: 25px;
+    opacity: 0.8;
+} */
+
+.btn-primary{
+    height : 30px
+}
+
+.worldClass{
+    text-align: center;
+}
+
+.search-option {
+    text-align: center;
+}
+
+.input-group{
+    justify-content: center;
+}
+
+/* body{
+    background-image: url("img/covidbg.jpg");
+} */
