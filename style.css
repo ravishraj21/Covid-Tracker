@@ -14,6 +14,17 @@
     opacity: 0.8;
 } */
 
+#header-date{
+    height:40px;
+    color:white;
+    background-color: #150e56;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
 .btn-primary{
     height : 30px
 }
@@ -22,7 +33,7 @@
     text-align: center;
 }
 
-.search-option {
+.search-option , .current-details {
     text-align: center;
 }
 
@@ -30,6 +41,40 @@
     justify-content: center;
 }
 
-/* body{
-    background-image: url("img/covidbg.jpg");
-} */
+#world-results , #searched-country li{
+    list-style:none;
+}
+#current-results{
+    list-style:none;
+}
+
+.caseClass{
+    color:rgb(108, 206, 206);
+}
+
+.deathClass{
+    color:rgb(253, 69, 69);
+}
+
+.recoveredClass{
+    color:rgb(33, 252, 33)
+}
+
+body{
+    
+    
+    background-color :#1597bb;
+    color:white;
+    font-size:120%;
+    font-family:cursive;
+    
+    
+}
+
+.background-body{
+    /* background-image: url("img/4964635.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* height : 100vh; */
+    /* width: 100vh; */
+}

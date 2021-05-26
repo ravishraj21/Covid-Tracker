@@ -14,72 +14,84 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <title>Fetch API | Practice</title>
+  <title>COVID API | Noob</title>
 </head>
 
-<body>
+<body onload="typingeffect()">
 
-  <!-- <div class="container">
 
-    <input type="search" id="input_country">
-    <input type="button" value="search" id="country-input">
+  <header>
+    <div id="header-date">
 
-    <ul id="searched-country">
+    </div>
+  </header>
 
-    </ul>
+  <div class="background-body">
+    <br>
 
-  </div> -->
+    <div class="search-option">
 
-  <div class="search-option">
+      <h2 id="typing"></h2>
 
-    <h2>Search for any Country</h2>
+      <br>
 
-    <div class="input-group">
-      <div class="form-outline">
-        <input type="search" id="input_country" class="form-control" />
-        <label class="form-label" for="form1"></label>
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="input_country" class="form-control" />
+          <label class="form-label" for="form1"></label>
+        </div>
+        <button type="button" class="btn btn-primary" value="search" id="country-input">
+          <i class="fas fa-search"></i>
+        </button>&nbsp;&nbsp;
+        <a href="#">
+          <div id="regionData"><button type="button" class="btn btn-info">Your Location</button></div>
+        </a>
+
       </div>
-      <button type="button" class="btn btn-primary" value="search" id="country-input">
-        <i class="fas fa-search"></i>
-      </button>
+
+      <ul id="searched-country">
+
+      </ul>
+
+      <!-- For getting data of your Location&nbsp;&nbsp;<a href="#">
+      <div id="regionData">Click Here</div>
+    </a> -->
 
     </div>
 
-    <ul id="searched-country">
+    <br>
 
-    </ul>
+    <div class="worldClass">
+      <h1>World COVID Cases: </h1>
+      <h6 id="updateTime"></h6><br>
+      <ul id="world-results">
 
-    For getting data of you State&nbsp;&nbsp;<a href="#">
-      <div id="regionData">Click Here</div>
-    </a>
+      </ul>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="current-details">
+
+      <!-- For getting data of your Location&nbsp;&nbsp;<a href="#">
+      <div id="regionData"><button type="button" class="btn btn-info">Your Location</button></div>
+    </a> -->
+
+      <h1 id="current-heading"></h1>
+
+      <p id="current-info"></p>
+
+      <ul id="current-results">
+
+      </ul>
+
+    </div>
+
+
 
   </div>
-
-
-
-  <div class="worldClass">
-    <h1>World COVID Cases: </h1>
-    <h6 id="updateTime"></h6><br>
-    <ul id="world-results">
-
-    </ul>
-
-  </div>
-
-
-
-
-  <h1>My Current Location Details: </h1>
-
-  <ul>
-    <li id="district"></li>
-    <li id="state"></li>
-    <li id="country"></li>
-    <!-- <li id="continent"></li> -->
-  </ul>
-
-
-
 
 </body>
 
