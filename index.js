@@ -129,9 +129,9 @@ const successCallback = (position) => {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
 
-    const urlLocation = "http://api.positionstack.com/v1/reverse?access_key=f2843e67c9711e243ba9ddc7c9165ef3&query=" + latitude + "," + longitude;
+    const urlLocation = `https://us1.locationiq.com/v1/reverse.php?key=pk.362a3b52e3bd0cfa83412d54962ae4e6&lat=${latitude}&lon=${longitude}&format=json` ;
 
-    // console.log(urlLocation);
+    console.log(urlLocation);
 
     fetch(urlLocation).then(response => {
         return response.json()
@@ -168,12 +168,12 @@ function locationSearch(data) {
 
 
 
-    let currentDistrict = data.data[0].locality;
-    let currentState = data.data[0].region;
-    let currentCountry = data.data[0].country;
+    let currentDistrict = data.address.state_district;
+    let currentState = data.address.state;
+    let currentCountry = data.address.country;
 
-    if (data.data[0].country.toUpperCase() === "INDIA") {
-        console.log(data.data[0].country.toUpperCase());
+    if (data.address.country.toUpperCase() === "INDIA") {
+        console.log(data.address.country.toUpperCase());
 
         fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api_india", {
             "method": "GET",
