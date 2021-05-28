@@ -1,18 +1,25 @@
-/* #input_country{
-    display: inline-block;
-    font-size: 20px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    background: #fff;
-    width: 350px;
-    height: 40px;
-    border: none;
-    outline: none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    padding-left: 10px;
-    border-radius: 25px;
-    opacity: 0.8;
-} */
+/* Background animation starts */
+body {
+    background: linear-gradient(270deg, #ff449f , #fff5b7 , #00ead3 , #005f99);
+    background-size: 400% 400%;
+
+    animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 
 #header-date{
     height:40px;
@@ -57,7 +64,7 @@
 }
 
 .recoveredClass{
-    color:rgb(33, 252, 33)
+    color:rgb(4, 255, 4)
 }
 
 body{

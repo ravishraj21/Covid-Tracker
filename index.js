@@ -226,17 +226,3 @@ function locationSearch(data) {
 
     }
 }
-
-// fetch("https://covid-19-tracking.p.rapidapi.com/v1", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-key": "7e8f102469msh9f81ccf22836c18p1b8991jsn1815ef40212f",
-// 		"x-rapidapi-host": "covid-19-tracking.p.rapidapi.com"
-// 	}
-// })
-// .then(response => {
-//     // console.log(response);
-//     return response.json()
-// }).then(data => {
-//     console.log(data);
-// })
