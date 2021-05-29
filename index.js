@@ -27,8 +27,11 @@ else if(currentHours >= 12 && currentHours < 17){
     greeting = "Good AfterNoon 🌞 ,";
 }
 
-else{
+else if(currentHours >= 17 && currentHours < 21){
     greeting = "Good Evening 🌝 ,";
+}
+else{
+    greeting = "Good Night 🌙 ,";
 }
 
 let strDate = greeting + " " + today.getDate() + " / " + (MonthOfYear[today.getMonth()]) + " / " + today.getFullYear()

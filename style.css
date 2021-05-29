@@ -51,6 +51,9 @@ body {
 #world-results , #searched-country li{
     list-style:none;
 }
+.current-details{
+    height: 34vh;
+}
 #current-results{
     list-style:none;
 }
@@ -67,15 +70,23 @@ body {
     color:rgb(4, 255, 4)
 }
 
-body{
-    
-    
+.copyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: blue;
+    padding-top: 5px;
+    height: 4.2vh;
+    font-size: small;
+}
+
+
+
+body{  
     background-color :#1597bb;
     color:white;
     font-size:120%;
-    font-family:cursive;
-    
-    
+    font-family:cursive;    
 }
 
 .background-body{
