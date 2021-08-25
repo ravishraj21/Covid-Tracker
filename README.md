@@ -1,5 +1,4 @@
 # Covid-Tracker
-## Link to Project -> https://ravishraj21.github.io/Covid-Tracker/
 
 ### API Used :-
 1. For World Data - "https://corona-virus-world-and-india-data.p.rapidapi.com/api
